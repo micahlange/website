@@ -8,7 +8,7 @@ Static personal website for `micahlange.com`, designed to be hosted with GitHub 
 - `styles.css` controls the visual design.
 - `app.js` contains the editable year recap content and image links.
 
-The current images still point to the Wix/static asset URLs captured from the live site. Before canceling Wix, move the final photo set into this repo and update the `img` object in `app.js` to use local paths such as `assets/photos/file-name.jpg`.
+The site images are stored in `assets/photos/` and referenced through the `img` object in `app.js`.
 
 ## GitHub Pages
 
