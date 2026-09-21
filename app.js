@@ -1,5 +1,28 @@
 const img = {
   chicagoHero: "assets/photos/chicago-hero.jpeg",
+  chicagoWinter2026: "assets/photos/2026-02-01-chicago-winter.jpeg",
+  chicagoFriends2026: "assets/photos/2026-02-02-chicago-friends.jpeg",
+  chicagoFood2026: "assets/photos/2026-02-03-chicago-food.jpeg",
+  bostonCelticMusic2026: "assets/photos/2026-01-01-boston-celtic-music.jpeg",
+  estesParkCousins2026: "assets/photos/2026-05-01-estes-park-cousins.jpeg",
+  goodbyeChicago2026: "assets/photos/2026-06-01-goodbye-chicago.jpeg",
+  austinFc2026: "assets/photos/2026-07-01-austin-fc.jpeg",
+  austinJazz2026: "assets/photos/2026-07-02-austin-jazz.jpeg",
+  austinCapitol2026: "assets/photos/2026-00-01-austin-capitol.jpeg",
+  netherlandsStreet2026: "assets/photos/2026-08-01-netherlands-street.jpeg",
+  netherlandsCycling2026: "assets/photos/2026-08-02-netherlands-cycling.jpeg",
+  netherlandsSelfie2026: "assets/photos/2026-08-03-netherlands-selfie.jpeg",
+  netherlandsLandscape2026: "assets/photos/2026-08-04-netherlands-landscape.jpeg",
+  netherlandsCows2026: "assets/photos/2026-08-05-netherlands-cows.jpeg",
+  netherlandsWindmills2026: "assets/photos/2026-08-06-netherlands-windmills.jpeg",
+  amsterdamCanalNight2026: "assets/photos/2026-08-07-amsterdam-canal-night.jpeg",
+  texasVolleyball2026: "assets/photos/2026-09-01-texas-volleyball.jpeg",
+  texasFootballFriends2026: "assets/photos/2026-09-02-texas-football-friends.jpeg",
+  texasFootballStadium2026: "assets/photos/2026-09-03-texas-football-stadium.jpeg",
+  closingSunset2026: "assets/photos/2026-11-01-sunset-closing.jpeg",
+  wedding2026One: "assets/photos/2026-04-01-wedding.jpeg",
+  marathonTraining2026: "assets/photos/2026-10-01-marathon-training.jpeg",
+  visitingAustin2026: "assets/photos/2026-03-01-visiting-austin.jpeg",
   winter: "assets/photos/winter.png",
   gym: "assets/photos/gym.jpeg",
   cousins: "assets/photos/cousins.jpg",
@@ -29,15 +52,25 @@ const img = {
 
 const years = {
   2026: {
-    status: "In construction",
-    intro: "The 2026 page is being built as life starts pointing toward Austin. Notes, photos, and the official recap will land here as the year takes shape.",
-    feature: img.chicagoHero,
+    status: "Ongoing",
+    intro: "A year of change! 2026 holds some of the largest changes in the past few years. After eight years in Chicago, I began a new chapter of life by moving to Austin, TX! In addition, I turned 30, had some great trips, and grappled with the unsettling possibility of becoming a Longhorns fan.",
+    feature: img.austinCapitol2026,
     stories: [
-      ["Soon", "In construction", "This page is reserved for the next chapter. Expect Austin, fresh routines, new trips, and probably at least one ambitious plan that gets revised in public.", []]
+      ["01", "Boston Celtic Music Festival", "I started off the year with a trip to sunny, tropical... Boston! A band I enjoy (Scottish Fish) was playing at the Boston Celtic Music Festival, and I've wanted to visit for a while. The music was great, and I enjoyed the MFA as well as all of the history the town offers!\n\nThe picture is of a post-show jam sesh, where anyone could come and play along. (I did not play.)", [img.bostonCelticMusic2026]],
+      ["02", "Friends in Chicago", "I spent the end of winter taking in time with friends as several of them (myself included) settled on plans to leave Chicago. While some days were icy, others were surprisingly pleasant and great for a trolley bar crawl.", [img.chicagoWinter2026, img.chicagoFriends2026, img.chicagoFood2026]],
+      ["03", "Trips to Austin", "I was able to make three trips to Austin before moving. One included my work's always incredible annual party (Luke Bryan + Calvin Harris!). The spring was a great time to take in food trucks before the summer heat really settled in.\n\nI went apartment shopping and decided on a high-rise building right downtown. I've leveled up from the 36th floor to the 43rd floor.", [img.visitingAustin2026]],
+      ["04", "Weddings: Kate + Dan and Danny + Carmen", "Summer is officially wedding season, and I had the privilege of celebrating two sets of friends as they entered a new chapter of life. Both weddings were spectacular, to say the least, and my friends who are getting married soon should know that the bar is set very high. :)", [img.wedding2026One]],
+      ["05", "Cousin Trip to Estes Park", "For the fourth annual trip, my cousins and I ditched Kansas City and went to Estes Park! It was fun to return to where our family celebrated our grandparents' 50th wedding anniversary. We enjoyed hiking the Bear Lake trail to Emerald Lake and exploring downtown.", [img.estesParkCousins2026]],
+      ["06", "Goodbye to Chicago", "In June, I said goodbye to Chicago. The last eight years have been wonderful, and Chicago has been a remarkable first adult home. It provided restaurants and museums, events and culture. But it also brought together so many of the people that have become my closest friends and community. The city will always mean something special to me and I'm grateful I was able to be there for so long.", [img.goodbyeChicago2026]],
+      ["07", "Settling into Austin", "However, as one door closes, a new door opens. I've been excitedly exploring Austin and taking in the sights, sounds, and tastes. An Austin FC game here, jazz music there, and basically an endless supply of tacos (Lazarus tacos are my favorite). I'm feeling settled in after a month or two and am happy to continue finding new experiences the city has to offer!", [img.austinFc2026, img.austinJazz2026]],
+      ["08", "Amsterdam + the Netherlands", "In August, I traveled to the Netherlands for 10 days and spent 5 of them on a cycling tour! I started and ended in Amsterdam and stayed in Delft, Utrecht, and Edam along the way. I resonated with the mix of city and countryside covered during the trip. The cities were lively with students returning to college, concerts along canals, F1, and great museums. The countryside was simply delightful with cows, windmills, cows, irrigation, and more cows.", [img.netherlandsStreet2026, img.netherlandsCycling2026, img.netherlandsSelfie2026, img.netherlandsLandscape2026, img.netherlandsCows2026, img.netherlandsWindmills2026, img.amsterdamCanalNight2026]],
+      ["09", "Texas Sports in the Fall", "What's Austin without the University of Texas? I took in a volleyball game and the incredible Texas–Ohio State football game. Yes, I was wearing red (my friends are OSU alumni) and a giga-chad Ohio State hat (provided by said friends), but I did find myself starting to clap for the Longhorns as they rallied back against the Buckeyes... there's a lot of internal distress on this topic. Stay tuned.", [img.texasVolleyball2026, img.texasFootballFriends2026, img.texasFootballStadium2026]],
+      ["10", "Marathon Training", "Running has become a mainstay in my life. I've been training hard in Texas, trying my best to adapt to the hot and humid environment. I'll race Chicago for the second time in October and then tackle Philadelphia with my sister Abby and cousin Madison in November! While my eyes are set on those near-term challenges, I'll also be traveling to Japan for the Tokyo Marathon in March 2027!", [img.marathonTraining2026]],
+      ["11", "To Be Continued", "Stay tuned for future updates as the year continues!", [img.closingSunset2026]]
     ]
   },
   2025: {
-    status: "Live",
+    status: "Recap",
     intro: "This year has brought exceptional fun at home in Chicago as well as on the road. The first half built a base for athletic aspirations; the back half brought a triathlon, two marathons, plenty of travel, and the beginning of a move toward Austin.",
     feature: img.winter,
     stories: [
@@ -94,8 +127,10 @@ const team = [
 ];
 
 const yearOrder = ["2026", "2025", "2024", "2023"];
+let countdownInterval;
 
 function renderApp() {
+  clearInterval(countdownInterval);
   const app = document.querySelector("#app");
   const route = window.location.hash.replace(/^#/, "") || "/";
   const parts = route.split("/").filter(Boolean);
@@ -115,6 +150,7 @@ function renderApp() {
   app.focus({ preventScroll: true });
   window.scrollTo({ top: 0, behavior: "auto" });
   wireCarouselControls();
+  wireCountdowns();
   updateCollapsedNav();
 }
 
@@ -124,8 +160,8 @@ function renderHomePage() {
       <img class="home-hero-image" src="${img.chicagoHero}" alt="Chicago skyline at sunset">
       <div class="home-hero-copy">
         <p class="section-kicker">micahlange.com</p>
-        <h1>Letters, ideas, and the many Micahs.</h1>
-        <p>Start with a year, wander into a note, or meet the whole executive committee.</p>
+        <h1>Annual updates and recaps</h1>
+        <p>Select a year below to see what went down in the world of Micah</p>
       </div>
     </section>
 
@@ -139,14 +175,6 @@ function renderHomePage() {
       <div class="year-carousel" id="year-carousel" tabindex="0" aria-label="Available yearly reviews">
         ${yearOrder.map(renderYearTile).join("")}
       </div>
-    </section>
-
-    <section class="home-band ideas-band">
-      <div>
-        <p class="section-kicker">Ideas</p>
-        <h2>Notes worth returning to.</h2>
-      </div>
-      <a class="band-link" href="#/ideas">Open ideas</a>
     </section>
 
     <section class="home-band team-band">
@@ -205,7 +233,7 @@ function renderYearPage(year) {
           <img class="feature-image" src="${data.feature}" alt="${year} recap photo">
         </aside>
         <div class="story-grid">
-          ${data.stories.map(renderStory).join("")}
+          ${data.stories.map((story) => renderStory(story, year)).join("")}
         </div>
       </div>
     </section>
@@ -248,9 +276,15 @@ function renderTeamPage() {
   `;
 }
 
-function renderStory([number, title, body, media]) {
+function renderStory([number, title, body, media], year) {
+  const useCarousel = year === "2026" && (title === "Settling into Austin" || title === "Amsterdam + the Netherlands");
+  const isClosingImage = year === "2026" && title === "To Be Continued";
   const gallery = media.length
-    ? `<div class="story-media">${media.map((src) => `<img src="${src}" alt="${title} photo" loading="lazy">`).join("")}</div>`
+    ? useCarousel
+      ? renderStoryCarousel(media, title)
+      : isClosingImage
+        ? `<div class="story-closing-image"><img src="${media[0]}" alt="Sunset over the city skyline" loading="lazy"></div>`
+      : `<div class="story-media">${media.map((src) => `<img src="${src}" alt="${title} photo" loading="lazy">`).join("")}</div>`
     : "";
 
   return `
@@ -258,11 +292,70 @@ function renderStory([number, title, body, media]) {
       <div class="story-number">${number}</div>
       <div>
         <h3>${title}</h3>
-        <p>${body}</p>
+        ${body.split("\n\n").filter(Boolean).map((paragraph) => `<p>${paragraph}</p>`).join("")}
         ${gallery}
+        ${year === "2026" && title === "Marathon Training" ? renderRaceCountdowns() : ""}
       </div>
     </article>
   `;
+}
+
+function renderStoryCarousel(media, title) {
+  return `
+    <div class="story-carousel" aria-label="${title} photos">
+      <div class="story-carousel-frame">
+        ${media.map((src, index) => `<img src="${src}" alt="${title} photo ${index + 1}" loading="lazy"${index ? " hidden" : ""}>`).join("")}
+      </div>
+      ${media.length > 1 ? `
+        <div class="story-carousel-controls">
+          <button type="button" class="story-carousel-prev" aria-label="Previous photo">←</button>
+          <span class="story-carousel-count">1 / ${media.length}</span>
+          <button type="button" class="story-carousel-next" aria-label="Next photo">→</button>
+        </div>
+      ` : ""}
+    </div>
+  `;
+}
+
+function renderRaceCountdowns() {
+  return `
+    <div class="race-countdowns" aria-label="Fall marathon countdowns">
+      <div class="race-countdown" data-race-date="2026-10-11T00:00:00-05:00">
+        <span class="race-name">Chicago Marathon</span>
+        <span class="race-date">October 11, 2026</span>
+        <strong class="race-time" aria-live="off">Loading countdown…</strong>
+      </div>
+      <div class="race-countdown" data-race-date="2026-11-22T00:00:00-05:00">
+        <span class="race-name">Philadelphia Marathon</span>
+        <span class="race-date">November 22, 2026</span>
+        <strong class="race-time" aria-live="off">Loading countdown…</strong>
+      </div>
+    </div>
+  `;
+}
+
+function wireCountdowns() {
+  const countdowns = document.querySelectorAll(".race-countdown");
+  if (!countdowns.length) return;
+
+  function updateCountdowns() {
+    const now = Date.now();
+    countdowns.forEach((countdown) => {
+      const target = new Date(countdown.dataset.raceDate).getTime();
+      const remaining = target - now;
+      const display = countdown.querySelector(".race-time");
+      if (remaining <= 0) {
+        display.textContent = now < target + 24 * 60 * 60 * 1000 ? "Race day!" : "Race complete";
+        return;
+      }
+      const days = Math.floor(remaining / 86400000);
+      const hours = Math.floor((remaining % 86400000) / 3600000);
+      display.textContent = `${days}d ${String(hours).padStart(2, "0")}h`;
+    });
+  }
+
+  updateCountdowns();
+  countdownInterval = setInterval(updateCountdowns, 60000);
 }
 
 function renderPerson([name, role, photo]) {
@@ -278,6 +371,22 @@ function renderPerson([name, role, photo]) {
 }
 
 function wireCarouselControls() {
+  document.querySelectorAll(".story-carousel").forEach((carousel) => {
+    const slides = [...carousel.querySelectorAll(".story-carousel-frame img")];
+    if (slides.length < 2) return;
+    const count = carousel.querySelector(".story-carousel-count");
+    let current = 0;
+
+    function showSlide(index) {
+      slides[current].hidden = true;
+      current = (index + slides.length) % slides.length;
+      slides[current].hidden = false;
+      count.textContent = `${current + 1} / ${slides.length}`;
+    }
+
+    carousel.querySelector(".story-carousel-prev").addEventListener("click", () => showSlide(current - 1));
+    carousel.querySelector(".story-carousel-next").addEventListener("click", () => showSlide(current + 1));
+  });
 }
 
 function updateCollapsedNav() {

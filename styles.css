@@ -376,10 +376,6 @@ a {
   line-height: 1;
 }
 
-.ideas-band {
-  background: #eef2ed;
-}
-
 .team-band {
   background: #263633;
   color: white;
@@ -525,6 +521,97 @@ a {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.story-carousel {
+  max-width: 540px;
+  margin-top: 22px;
+}
+
+.story-closing-image {
+  max-width: 540px;
+  margin-top: 22px;
+}
+
+.story-closing-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.story-carousel-frame img {
+  width: 100%;
+  height: min(65vh, 520px);
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 8px;
+}
+
+.story-carousel-frame img[hidden] {
+  display: none;
+}
+
+.story-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.story-carousel-controls button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.story-carousel-controls button:hover,
+.story-carousel-controls button:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.story-carousel-count {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+}
+
+.race-countdowns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.race-countdown {
+  display: grid;
+  gap: 5px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.race-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  line-height: 1.1;
+}
+
+.race-date {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.8rem;
+}
+
+.race-time {
+  margin-top: 10px;
+  font-variant-numeric: tabular-nums;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .idea {
