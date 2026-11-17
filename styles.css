@@ -240,6 +240,10 @@ a {
   padding: clamp(54px, 8vw, 104px) clamp(18px, 5vw, 76px);
 }
 
+.page-section {
+  background: #fbf6ed;
+}
+
 .home-section {
   border-bottom: 1px solid var(--line);
 }
@@ -396,21 +400,21 @@ a {
 }
 
 .page-section.muted {
-  background: #eef2ed;
+  background: #fbf6ed;
 }
 
 .page-section.construction {
-  background: #203835;
-  color: white;
+  background: #fbf6ed;
+  color: var(--ink);
 }
 
 .page-section.construction .year-aside p,
 .page-section.construction .story-card p {
-  color: rgba(255, 255, 255, 0.76);
+  color: #39423f;
 }
 
 .page-section.construction .story-card {
-  border-top-color: rgba(255, 255, 255, 0.18);
+  border-top-color: var(--line);
 }
 
 .page-hero {
@@ -436,44 +440,134 @@ a {
   font-size: 1.08rem;
 }
 
-.year-shell {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
-  gap: clamp(28px, 5vw, 72px);
+.year-page {
   max-width: 1220px;
   margin: 0 auto;
 }
 
-.year-aside {
-  position: sticky;
-  top: 96px;
-  align-self: start;
+.year-recap {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.45fr) minmax(0, 1fr) minmax(170px, 0.42fr);
+  gap: clamp(22px, 4vw, 54px);
+  align-items: center;
+  padding: clamp(28px, 4vw, 48px);
+  background: #d9e3d7;
+  color: #1e302c;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
 }
 
-.year-aside h2 {
+.year-recap h2 {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(3.8rem, 10vw, 8rem);
   line-height: 0.85;
 }
 
-.year-aside p {
-  color: var(--muted);
+.year-recap .section-kicker,
+.year-recap-label {
+  color: #46625b;
+}
+
+.year-recap-label {
+  margin: 0 0 12px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.year-recap-copy > p:not(.year-recap-label) {
+  margin: 0;
   font-size: 1rem;
+  line-height: 1.65;
+}
+
+.year-recap-copy > p + p {
+  margin-top: 1rem;
 }
 
 .feature-image {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  margin-top: 28px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: var(--shadow);
+}
+
+.year-recap-simple {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.year-recap-simple h2 {
+  font-size: clamp(3rem, 7vw, 5rem);
+}
+
+.year-recap-simple .year-recap-copy {
+  max-width: 72ch;
+}
+
+.year-2026 .year-recap {
+  background: #f5dfb0;
+  color: #443414;
+}
+
+.year-2026 .year-recap .section-kicker,
+.year-2026 .year-recap-label {
+  color: #8a5b18;
+}
+
+.year-2026 .story-number {
+  color: #a96016;
+}
+
+.year-2025 .year-recap {
+  background: #dcebdd;
+  color: #254437;
+}
+
+.year-2025 .year-recap .section-kicker,
+.year-2025 .year-recap-label {
+  color: #52755f;
+}
+
+.year-2025 .story-number {
+  color: #3d7453;
+}
+
+.year-2024 .year-recap {
+  background: #dcebf0;
+  color: #254852;
+}
+
+.year-2024 .year-recap .section-kicker,
+.year-2024 .year-recap-label {
+  color: #4c7680;
+}
+
+.year-2024 .story-number {
+  color: #2f6f80;
+}
+
+.year-2023 .year-recap {
+  background: #f0dfd5;
+  color: #513a31;
+}
+
+.year-2023 .year-recap .section-kicker,
+.year-2023 .year-recap-label {
+  color: #8e5a45;
+}
+
+.year-2023 .story-number {
+  color: #ad6040;
 }
 
 .story-grid {
   display: grid;
   gap: 18px;
+  max-width: 900px;
+  margin: clamp(36px, 6vw, 76px) auto 0;
 }
 
 .story-card {
@@ -521,6 +615,39 @@ a {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.story-media-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.story-media-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.story-subsections {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+}
+
+.story-subsections section {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.story-subsections h4 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  margin: 0 0 0.35rem;
+}
+
+.story-subsections p {
+  margin: 0;
+}
+
+.story-subsections p + p {
+  margin-top: 0.55rem;
 }
 
 .story-carousel {
@@ -770,17 +897,13 @@ a {
   }
 
   .page-hero,
-  .year-shell,
+  .year-recap,
   .team-strip {
     grid-template-columns: 1fr;
   }
 
-  .year-aside {
-    position: static;
-  }
-
   .feature-image {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 8;
   }
 
   .team-row {
