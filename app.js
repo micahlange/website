@@ -105,7 +105,7 @@ const img = {
   mexicoF12023: "assets/photos/2023-06-01-mexico-f1.jpg",
   mexicoBakery2023: "assets/photos/2023-06-02-mexico-bakery.jpg",
   xochimilco2023: "assets/photos/2023-06-03-xochimilco.jpg",
-  team1: "assets/photos/team1.jpeg",
+  team1: "assets/photos/team1-voter.jpeg",
   team2: "assets/photos/team2.jpeg",
   team3: "assets/photos/team3.jpeg",
   team4: "assets/photos/team4.jpg"
@@ -181,7 +181,7 @@ const years = {
 };
 
 const team = [
-  ["Micah Lange", "CEO + Hot Guy", img.team1],
+  ["Micah Lange", "CEO + Voter", img.team1],
   ["Micah Lange", "Fashionista", img.team2],
   ["Micah Lange", "Usher Extraordinaire", img.team3],
   ["Micah Lange", "Foodie + Socialite", img.team4]
