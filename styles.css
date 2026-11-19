@@ -653,6 +653,7 @@ a {
 .story-carousel {
   max-width: 540px;
   margin-top: 22px;
+  touch-action: pan-y;
 }
 
 .story-closing-image {

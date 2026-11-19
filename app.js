@@ -521,6 +521,7 @@ function wireCarouselControls() {
     if (slides.length < 2) return;
     const count = carousel.querySelector(".story-carousel-count");
     let current = 0;
+    let touchStart = null;
 
     function showSlide(index) {
       slides[current].hidden = true;
@@ -531,6 +532,26 @@ function wireCarouselControls() {
 
     carousel.querySelector(".story-carousel-prev").addEventListener("click", () => showSlide(current - 1));
     carousel.querySelector(".story-carousel-next").addEventListener("click", () => showSlide(current + 1));
+
+    carousel.addEventListener("pointerdown", (event) => {
+      if (event.pointerType !== "touch") return;
+      touchStart = { x: event.clientX, y: event.clientY };
+    });
+
+    carousel.addEventListener("pointerup", (event) => {
+      if (!touchStart || event.pointerType !== "touch") return;
+
+      const deltaX = event.clientX - touchStart.x;
+      const deltaY = event.clientY - touchStart.y;
+      touchStart = null;
+
+      if (Math.abs(deltaX) < 48 || Math.abs(deltaX) < Math.abs(deltaY) * 1.25) return;
+      showSlide(current + (deltaX < 0 ? 1 : -1));
+    });
+
+    carousel.addEventListener("pointercancel", () => {
+      touchStart = null;
+    });
   });
 }
 
